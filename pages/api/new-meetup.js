@@ -1,7 +1,9 @@
 import Meetup from "../../data/schemas/meetupSchema";
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/meetups");
+mongoose.createConnection(
+  "mongodb+srv://rajat:admin123@cluster0.bs9lmip.mongodb.net/?retryWrites=true&w=majority"
+);
 
 const newMeetupHandler = async (req, res) => {
   if (req.method === "POST") {

@@ -4,7 +4,9 @@ import Meetup from "../data/schemas/meetupSchema";
 import mongoose from "mongoose";
 async function connectToDatabase() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/meetups");
+    await mongoose.connect(
+      "mongodb+srv://rajat:admin123@cluster0.bs9lmip.mongodb.net/?retryWrites=true&w=majority"
+    );
     console.log("Connected to MongoDB");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
@@ -28,7 +30,7 @@ const HomePage = (props) => {
 export default HomePage;
 export async function getStaticProps() {
   /// This is equivalent to defining it. You must not seperately do "import getStaticProps" and all
-  const dataToAdd = await Meetup.find();
+  const dataToAdd = await Meetup.find({});
   return {
     props: {
       meetups: dataToAdd.map((data) => {

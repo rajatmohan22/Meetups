@@ -1,9 +1,12 @@
 import MeetupDetails from "../../components/meetups/MeetupDetails";
 import mongoose from "mongoose";
+
 import Meetup from "../../data/schemas/meetupSchema";
 async function connectToDatabase() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/meetups");
+    await mongoose.connect(
+      "mongodb+srv://rajat:admin123@cluster0.bs9lmip.mongodb.net/?retryWrites=true&w=majority"
+    );
     console.log("Connected to MongoDB");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);

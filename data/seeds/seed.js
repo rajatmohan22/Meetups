@@ -1,6 +1,12 @@
 const mongoose = require("mongoose");
 const Meetup = require("../schemas/meetupSchema");
-mongoose.connect("mongodb://127.0.0.1:27017/meetups");
+mongoose
+  .createConnection(
+    "mongodb+srv://rajat:admin123@cluster0.bs9lmip.mongodb.net/?retryWrites=true&w=majority"
+  )
+  .then(() => {
+    console.log("Seeded");
+  });
 
 const dataToAdd = [
   {

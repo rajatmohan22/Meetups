@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/HtlHG-wz4k9NRz9P4XxPs/_buildManifest.js",
-    "static/HtlHG-wz4k9NRz9P4XxPs/_ssgManifest.js"
+    "static/iYuZ8HEbmAXzhnCA6-NCN/_buildManifest.js",
+    "static/iYuZ8HEbmAXzhnCA6-NCN/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,14 +16,14 @@
       "static/chunks/main-436ff486eb898866.js",
       "static/chunks/6814153d-bb636b47a836ce10.js",
       "static/css/f180bbcb54b83128.css",
-      "static/chunks/pages/index-579e1cddf9f61ebe.js"
+      "static/chunks/pages/index-1d4b27289fbd5525.js"
     ],
     "/[meetupId]": [
       "static/chunks/webpack-b8f8d6679aaa5f42.js",
       "static/chunks/framework-66d32731bdd20e83.js",
       "static/chunks/main-436ff486eb898866.js",
       "static/chunks/6814153d-bb636b47a836ce10.js",
-      "static/chunks/pages/[meetupId]-b6691df7c221e9ed.js"
+      "static/chunks/pages/[meetupId]-0d7a59bfcfc7d3d4.js"
     ],
     "/_app": [
       "static/chunks/webpack-b8f8d6679aaa5f42.js",
