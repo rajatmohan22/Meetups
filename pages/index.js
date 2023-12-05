@@ -2,6 +2,15 @@ import Head from "next/head";
 import MeetupList from "../components/meetups/MeetupList";
 import Meetup from "../data/schemas/meetupSchema";
 import mongoose from "mongoose";
+async function connectToDatabase() {
+  try {
+    await mongoose.connect("mongodb://127.0.0.1:27017/meetups");
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+}
+connectToDatabase();
 // mongoose.connect("mongodb://127.0.0.1:27017/meetups"); // This is throwing error for some reaso.
 
 const HomePage = (props) => {
